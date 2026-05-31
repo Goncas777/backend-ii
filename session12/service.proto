@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package service;
+
+service CubeService {
+    rpc Cube (CubeRequest) returns (CubeReply) {}
+}
+
+message CubeRequest {
+    int64 number = 1;
+}
+
+message CubeReply {
+    int64 result = 1;
+}
